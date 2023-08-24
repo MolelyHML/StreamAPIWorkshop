@@ -67,4 +67,14 @@ public class Person {
         result = 31 * result + (profession != null ? profession.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", profession=" + profession +
+                '}';
+    }
 }
